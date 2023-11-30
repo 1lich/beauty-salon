@@ -3,7 +3,7 @@ import { MainDiv } from "./styled-Main"
 
 const Main = () => {
   return (
-    <Layout title="Beauty Salon">
+    <Layout title="Главная">
       <MainDiv />
     </Layout>
   )
