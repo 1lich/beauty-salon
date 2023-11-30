@@ -1,7 +1,12 @@
+import Layout from "../../components/Layout"
 import { MainDiv } from "./styled-Main"
 
-function Main() {
-  return <MainDiv />
+const Main = () => {
+  return (
+    <Layout title="Beauty Salon">
+      <MainDiv />
+    </Layout>
+  )
 }
 
 export default Main
