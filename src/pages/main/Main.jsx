@@ -1,7 +1,7 @@
-import React from "react"
+import { MainDiv } from "./styled-Main"
 
 function Main() {
-  return <div>Main</div>
+  return <MainDiv />
 }
 
 export default Main
