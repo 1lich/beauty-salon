@@ -3,26 +3,29 @@ import { Link } from "react-router-dom"
 
 export const HeaderStyled = styled.header`
   display: flex;
-  flex-direction: row;
-
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0);
   height: 70px;
-  margin-bottom: -70px;
-  margin-left: 20vw;
-  width: 60vw;
+  width: 100%;
+  justify-content: center;
 `
+export const CenterDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+`
+
 export const HeaderDiv = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 `
 export const StyledLink = styled(Link)`
   color: white;
   font-family: Cormorant Garamond;
   font-size: 30px;
   font-weight: 400;
-  padding: 30px;
+  padding: 50px;
+  text-decoration: none;
 `
 export const StyledIcon = styled.svg`
   width: 40px;
@@ -30,6 +33,8 @@ export const StyledIcon = styled.svg`
   min-width: 40px;
   min-height: 40px;
   color: white;
+  margin-top: 1rem;
+  padding: 50px;
 `
 
 export const StyledInstLink = styled.a`

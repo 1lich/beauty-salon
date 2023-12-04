@@ -1,10 +1,13 @@
 import Layout from "../../components/Layout"
-import { MainDiv } from "./styled-Main"
+import { MainDiv, StyledImg } from "./styled-Main"
+import img from "../../assets/images/bgc.png"
 
 const Main = () => {
   return (
     <Layout title="Главная">
-      <MainDiv />
+      <MainDiv>
+        <StyledImg src={img} />
+      </MainDiv>
     </Layout>
   )
 }

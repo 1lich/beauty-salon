@@ -8,29 +8,32 @@ import {
   StyledLink,
   StyledIcon,
   StyledInstLink,
+  CenterDiv,
 } from "./styled-Header"
 
 const Header = () => {
   return (
     <HeaderStyled>
-      <StyledInstLink>
+      <CenterDiv>
+        <StyledInstLink>
+          <StyledIcon>
+            <FontAwesomeIcon icon={faInstagram} />
+          </StyledIcon>
+        </StyledInstLink>
+        <HeaderDiv>
+          <StyledLink to="/">Главная</StyledLink>
+          <StyledLink to="/staff">Мастера</StyledLink>
+          <StyledLink to="/services">Услуги</StyledLink>
+        </HeaderDiv>
         <StyledIcon>
-          <FontAwesomeIcon icon={faInstagram} />
+          <MySVG />
         </StyledIcon>
-      </StyledInstLink>
-      <HeaderDiv>
-        <StyledLink to="/">Главная</StyledLink>
-        <StyledLink to="/staff">Мастера</StyledLink>
-        <StyledLink to="/services">Услуги</StyledLink>
-      </HeaderDiv>
-      <StyledIcon>
-        <MySVG />
-      </StyledIcon>
-      <HeaderDiv>
-        <StyledLink to="/price">Цены</StyledLink>
-        <StyledLink to="/works">Работы</StyledLink>
-        <StyledLink to="/contacts">Контакты</StyledLink>
-      </HeaderDiv>
+        <HeaderDiv>
+          <StyledLink to="/price">Цены</StyledLink>
+          <StyledLink to="/works">Работы</StyledLink>
+          <StyledLink to="/contacts">Контакты</StyledLink>
+        </HeaderDiv>
+      </CenterDiv>
     </HeaderStyled>
   )
 }
