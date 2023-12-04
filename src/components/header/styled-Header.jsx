@@ -36,10 +36,3 @@ export const StyledIcon = styled.svg`
   margin-top: 1rem;
   padding: 50px;
 `
-
-export const StyledInstLink = styled.a`
-  &:hover {
-    background-color: orange;
-    color: black;
-  }
-`
