@@ -1,16 +1,36 @@
-import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 
-import { HeaderDiv, HeaderStyled } from "./styled-Header"
+import { ReactComponent as MySVG } from "../../assets/icons/Vector.svg"
+import {
+  HeaderDiv,
+  HeaderStyled,
+  StyledLink,
+  StyledIcon,
+  StyledInstLink,
+} from "./styled-Header"
 
 const Header = () => {
   return (
     <HeaderStyled>
-      <Link to="/">
-        <HeaderDiv>1</HeaderDiv>
-      </Link>
-      <Link to="staff">
-        <HeaderDiv>2</HeaderDiv>
-      </Link>
+      <StyledInstLink>
+        <StyledIcon>
+          <FontAwesomeIcon icon={faInstagram} />
+        </StyledIcon>
+      </StyledInstLink>
+      <HeaderDiv>
+        <StyledLink to="/">Главная</StyledLink>
+        <StyledLink to="/staff">Мастера</StyledLink>
+        <StyledLink to="/services">Услуги</StyledLink>
+      </HeaderDiv>
+      <StyledIcon>
+        <MySVG />
+      </StyledIcon>
+      <HeaderDiv>
+        <StyledLink to="/price">Цены</StyledLink>
+        <StyledLink to="/works">Работы</StyledLink>
+        <StyledLink to="/contacts">Контакты</StyledLink>
+      </HeaderDiv>
     </HeaderStyled>
   )
 }
