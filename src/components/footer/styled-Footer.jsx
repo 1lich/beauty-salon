@@ -11,7 +11,7 @@ export const StyledFooter = styled.footer`
   width: 60vw;
 `
 export const FooterDiv = styled.div`
-  margin-top: 5rem;
+  margin-top: 4rem;
   height: 200px;
 `
 export const FooterH1 = styled.h1`
