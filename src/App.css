@@ -1,8 +1,23 @@
+@font-face {
+  font-family: "DejaVu Markup";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("DejaVu Markup"),
+    url("assets/fonts/DejaVu\ Markup/DejaVuMarkup.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Roboto Mono"),
+    url("assets/fonts/Roboto\ Mono/RobotoMono.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
 }
 body {
   background-color: black;
+  color: white;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

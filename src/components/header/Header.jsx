@@ -12,17 +12,17 @@ const Header = () => {
     <HeaderStyled>
       <CenterDiv>
         <HeaderDiv>
-          <StyledLink to="/">Главная</StyledLink>
-          <StyledLink to="/staff">Мастера</StyledLink>
-          <StyledLink to="/services">Услуги</StyledLink>
+          <StyledLink to="/">ГЛАВНАЯ</StyledLink>
+          <StyledLink to="/staff">МАСТЕРА</StyledLink>
+          <StyledLink to="/services">УСЛУГИ</StyledLink>
         </HeaderDiv>
         <StyledIcon>
           <MySVG />
         </StyledIcon>
         <HeaderDiv>
-          <StyledLink to="/price">Цены</StyledLink>
-          <StyledLink to="/works">Работы</StyledLink>
-          <StyledLink to="/contacts">Контакты</StyledLink>
+          <StyledLink to="/price">ЦЕНЫ</StyledLink>
+          <StyledLink to="/works">РАБОТЫ</StyledLink>
+          <StyledLink to="/contacts">КОНТАКТЫ</StyledLink>
         </HeaderDiv>
       </CenterDiv>
     </HeaderStyled>

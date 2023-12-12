@@ -8,7 +8,7 @@ export const MainDiv = styled.div`
 `
 
 export const StyledImg = styled.img`
-  width: 70%;
+  width: 80%;
   height: 90%;
   margin: 2rem;
 `

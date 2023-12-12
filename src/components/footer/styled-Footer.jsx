@@ -5,19 +5,21 @@ export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  margin-left: 20vw;
-  width: 60vw;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid white;
 `
 export const FooterDiv = styled.div`
-  margin-top: 5rem;
-  height: 200px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 `
 export const FooterH1 = styled.h1`
-  font-family: Garamond;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: Roboto Mono;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 0;
 `
 export const StyledLink = styled.a`
   padding-top: 3rem;
@@ -25,10 +27,9 @@ export const StyledLink = styled.a`
 `
 
 export const StyledParagraph = styled.p`
-  padding-top: 2rem;
-  font-family: Cormorant Garamond;
-  font-weight: 400;
-  font-size: 23px;
+  padding-top: 0.5rem;
+  font-family: Roboto Mono;
+  font-size: 14px;
 `
 export const StyledIcon = styled.svg`
   width: 40px;

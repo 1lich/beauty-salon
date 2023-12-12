@@ -3,9 +3,10 @@ import { Link } from "react-router-dom"
 
 export const HeaderStyled = styled.header`
   display: flex;
-  height: 70px;
+  height: 100px;
   width: 100%;
   justify-content: center;
+  border-bottom: 1px solid white;
 `
 export const CenterDiv = styled.div`
   display: flex;
@@ -21,9 +22,9 @@ export const HeaderDiv = styled.div`
 `
 export const StyledLink = styled(Link)`
   color: white;
-  font-family: Cormorant Garamond;
+  font-family: Roboto Mono;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 800;
   padding: 50px;
   text-decoration: none;
 `
