@@ -7,22 +7,31 @@ import {
   CenterDiv,
 } from "./styled-Header"
 
+import { ReactComponent as MySVG } from "../../assets/icons/Vector.svg"
+import {
+  HeaderDiv,
+  HeaderStyled,
+  StyledLink,
+  StyledIcon,
+  CenterDiv,
+} from "./styled-Header"
+
 const Header = () => {
   return (
     <HeaderStyled>
       <CenterDiv>
         <HeaderDiv>
-          <StyledLink to="/">Главная</StyledLink>
-          <StyledLink to="/staff">Мастера</StyledLink>
-          <StyledLink to="/services">Услуги</StyledLink>
+          <StyledLink to="/">ГЛАВНАЯ</StyledLink>
+          <StyledLink to="/staff">МАСТЕРА</StyledLink>
+          <StyledLink to="/services">УСЛУГИ</StyledLink>
         </HeaderDiv>
         <StyledIcon>
           <MySVG />
         </StyledIcon>
         <HeaderDiv>
-          <StyledLink to="/price">Цены</StyledLink>
-          <StyledLink to="/works">Работы</StyledLink>
-          <StyledLink to="/contacts">Контакты</StyledLink>
+          <StyledLink to="/price">ЦЕНЫ</StyledLink>
+          <StyledLink to="/works">РАБОТЫ</StyledLink>
+          <StyledLink to="/contacts">КОНТАКТЫ</StyledLink>
         </HeaderDiv>
       </CenterDiv>
     </HeaderStyled>
