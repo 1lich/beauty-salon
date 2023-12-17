@@ -8,7 +8,7 @@ export const StyledFooter = styled.footer`
   justify-content: space-around;
   width: 100%;
   position: fixed;
-  bottom: 0;
+
   border-top: 1px solid white;
 `
 export const FooterDiv = styled.div`
