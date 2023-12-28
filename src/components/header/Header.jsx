@@ -20,7 +20,7 @@ const Header = () => {
           <MySVG />
         </StyledIcon>
         <HeaderDiv>
-          <StyledLink to="/price">ЦЕНЫ</StyledLink>
+          <StyledLink to="/prices">ЦЕНЫ</StyledLink>
           <StyledLink to="/works">РАБОТЫ</StyledLink>
           <StyledLink to="/contacts">КОНТАКТЫ</StyledLink>
         </HeaderDiv>

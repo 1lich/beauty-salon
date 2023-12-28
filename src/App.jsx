@@ -4,7 +4,7 @@ import "./App.css"
 import Main from "./pages/main/Main"
 import Staff from "./pages/staff/Staff"
 import Services from "./pages/services/Services"
-import Price from "./pages/price/Price"
+import Prices from "./pages/price/Prices"
 import Works from "./pages/works/Works"
 import Contacts from "./pages/contacts/Contacts"
 
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="staff" element={<Staff />} />
           <Route path="services" element={<Services />} />
-          <Route path="price" element={<Price />} />
+          <Route path="prices" element={<Prices />} />
           <Route path="works" element={<Works />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="*" element={<div>404</div>} />
