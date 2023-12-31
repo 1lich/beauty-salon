@@ -26,11 +26,11 @@ const Prices = () => {
             {priceList.map(({ id, title, price, description } = priceList) => {
               return (
                 <Price
-                  id={id}
+                  key={id}
                   title={title}
                   price={price}
                   description={description}
-                ></Price>
+                />
               )
             })}
           </PriceDiv>

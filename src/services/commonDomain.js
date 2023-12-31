@@ -27,4 +27,4 @@ export const priceListStore = commonDomain.createStore([
 ])
 
 priceListStore.on(getPriceListEvent, (_, payload) => payload)
-priceListStore.watch((data) => console.log(`data: ${data}`))
+//priceListStore.watch((data) => console.log(`data: ${data}`))
