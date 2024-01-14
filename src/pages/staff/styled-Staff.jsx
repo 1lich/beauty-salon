@@ -13,6 +13,7 @@ export const StyledStaffGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 5rem;
 `
 
 export const StyledStaffCard = styled.div``
