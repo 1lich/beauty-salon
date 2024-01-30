@@ -1,6 +1,5 @@
 import { createDomain } from "effector"
 import axios from "axios"
-import axios from "axios"
 const commonDomain = createDomain("commonDomain")
 
 export const getPriceListEvent = commonDomain.createEvent("getPriceListEvent")
