@@ -2,6 +2,7 @@ import { createDomain } from "effector"
 import axios from "axios"
 const commonDomain = createDomain("commonDomain")
 
+export const getPriceListEvent = commonDomain.createEvent("getPriceListEvent")
 export const priceListStore = commonDomain.createStore([])
 export const getPriceListFx = commonDomain.createEffect(async () => {
   const getPriceList = await axios
