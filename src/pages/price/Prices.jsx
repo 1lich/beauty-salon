@@ -16,7 +16,6 @@ import { useEffect } from "react"
 const Prices = () => {
   useEffect(() => {
     getPriceListEvent()
-    console.log("re-render")
   }, [])
   const priceList = useUnit(priceListStore).result
   return (
