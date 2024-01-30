@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
+import "./services/init"
 import "./App.css"
 import Main from "./pages/main/Main"
 import Staff from "./pages/staff/Staff"
