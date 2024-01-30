@@ -10,7 +10,7 @@ const Price = (props) => {
   return (
     <OuterPriceDiv key={props.id}>
       <InnerPriceDiv>
-        <TitleDiv>{props.title}</TitleDiv>
+        <TitleDiv>{props.name}</TitleDiv>
         <PriceValue>{props.price}</PriceValue>
       </InnerPriceDiv>
       <DescDiv>{props.description}</DescDiv>

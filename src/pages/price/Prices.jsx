@@ -13,9 +13,8 @@ import img from "../../assets/images/wash.png"
 import Price from "./Price"
 
 const Prices = () => {
-  const priceList = useUnit(priceListStore)
-  console.log(priceList)
-
+  const priceList = useUnit(priceListStore).result
+  console.log("price in PRices", priceList)
   return (
     <Layout title="Цены на услуги">
       <PriceH1>Цены на услуги</PriceH1>
@@ -23,11 +22,11 @@ const Prices = () => {
         <PriceGrid>
           <PriceImg src={img}></PriceImg>
           <PriceDiv>
-            {priceList.map(({ id, title, price, description } = priceList) => {
+            {priceList.map(({ id, name, description, price } = priceList) => {
               return (
                 <Price
                   key={id}
-                  title={title}
+                  name={name}
                   price={price}
                   description={description}
                 />
