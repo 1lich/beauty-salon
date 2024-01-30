@@ -1,7 +1,9 @@
 import { createDomain } from "effector"
 import axios from "axios"
+import axios from "axios"
 const commonDomain = createDomain("commonDomain")
 
+export const getPriceListEvent = commonDomain.createEvent("getPriceListEvent")
 export const priceListStore = commonDomain.createStore([])
 export const getPriceListFx = commonDomain.createEffect(async () => {
   const getPriceList = await axios
@@ -17,6 +19,10 @@ export const getPriceListFx = commonDomain.createEffect(async () => {
   return getPriceList
 })
 
+priceListStore.on(getPriceListFx.done, (_, payload) => payload)
+priceListStore.watch((data) => console.log("data in store", data.result))
+getPriceListFx.doneData.watch((data) => console.log("received data:", data))
+getPriceListFx()
 priceListStore.on(getPriceListFx.done, (_, payload) => payload)
 priceListStore.watch((data) => console.log("data in store", data.result))
 getPriceListFx.doneData.watch((data) => console.log("received data:", data))
