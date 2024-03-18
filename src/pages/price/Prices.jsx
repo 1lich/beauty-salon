@@ -1,5 +1,6 @@
 import { getPriceListEvent, priceListStore } from "../../services/commonDomain"
 import { useUnit } from "effector-react"
+import { useEffect } from "react"
 
 import Layout from "../../components/Layout"
 import {
@@ -11,7 +12,6 @@ import {
 } from "./styled-Prices"
 import img from "../../assets/images/wash.png"
 import Price from "./Price"
-import { useEffect } from "react"
 
 const Prices = () => {
   useEffect(() => {
@@ -26,11 +26,9 @@ const Prices = () => {
           <PriceImg src={img}></PriceImg>
           <PriceDiv>
             {priceList.map(({ id, name, description, price } = priceList) => {
-            {priceList.map(({ id, name, description, price } = priceList) => {
               return (
                 <Price
                   key={id}
-                  name={name}
                   name={name}
                   price={price}
                   description={description}
