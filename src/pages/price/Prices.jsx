@@ -26,11 +26,9 @@ const Prices = () => {
           <PriceImg src={img}></PriceImg>
           <PriceDiv>
             {priceList.map(({ id, name, description, price } = priceList) => {
-            {priceList.map(({ id, name, description, price } = priceList) => {
               return (
                 <Price
                   key={id}
-                  name={name}
                   name={name}
                   price={price}
                   description={description}
