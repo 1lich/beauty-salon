@@ -1,6 +1,16 @@
 import { sample } from "effector"
 
-import { getPriceListEvent, getPriceListFx } from "./commonDomain"
+import {
+  getPriceListEvent,
+  getPriceListFx,
+  getStaffListEvent,
+  getStaffListFx,
+} from "./commonDomain"
+
+sample({
+  clock: getStaffListEvent,
+  target: getStaffListFx,
+})
 
 sample({
   clock: getPriceListEvent,

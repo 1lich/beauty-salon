@@ -1,4 +1,8 @@
 import React from "react"
+import { useEffect } from "react"
+import { getStaffListEvent, staffListStore } from "../../services/commonDomain"
+import { useUnit } from "effector-react"
+
 import Layout from "../../components/Layout"
 import {
   StyledH1,
@@ -8,30 +12,26 @@ import {
   StyledStaffName,
   StyledStaffPhoto,
 } from "./styled-Staff"
-import img from "../../assets/images/photo/katya.png"
-import img2 from "../../assets/images/photo/irina.png"
-import img3 from "../../assets/images/photo/olga.png"
 
 const Staff = () => {
+  useEffect(() => {
+    getStaffListEvent()
+  }, [])
+  const staffList = useUnit(staffListStore).result
+  console.log("received data to staff", staffList)
   return (
     <Layout>
       <StyledH1>Наши мастера</StyledH1>
       <StyledStaffGrid>
-        <StyledStaffCard>
-          <StyledStaffPhoto src={img} />
-          <StyledStaffName>Екатерина Залупкина</StyledStaffName>
-          <StyledStaffInfo>Стилист-таксист</StyledStaffInfo>
-        </StyledStaffCard>
-        <StyledStaffCard>
-          <StyledStaffPhoto src={img2} />
-          <StyledStaffName>Ирина Баребухова</StyledStaffName>
-          <StyledStaffInfo>Стилист-онанист</StyledStaffInfo>
-        </StyledStaffCard>
-        <StyledStaffCard>
-          <StyledStaffPhoto src={img3} />
-          <StyledStaffName>Ольга Пупкина</StyledStaffName>
-          <StyledStaffInfo>Стилист-террорист</StyledStaffInfo>
-        </StyledStaffCard>
+        {staffList.map(({ id, name, occupation, photo } = staffList) => {
+          return (
+            <StyledStaffCard key={id}>
+              <StyledStaffPhoto src={photo} />
+              <StyledStaffName>{name}</StyledStaffName>
+              <StyledStaffInfo>{occupation}</StyledStaffInfo>
+            </StyledStaffCard>
+          )
+        })}
       </StyledStaffGrid>
     </Layout>
   )
